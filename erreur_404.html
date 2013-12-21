@@ -1,0 +1,56 @@
+<html lang="fr">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Paris Métro</title>		
+	  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	  <meta name="robots" content="noindex, nofollow">
+	  <link rel="icon" type="image/png" href="favicon.ico" />
+	  <link rel="stylesheet" href="css/reset.css">
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300,600' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/css_event.css">
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	  <script type="text/javascript" src="js/script.js"></script>	
+	  <script type="text/javascript" src="js/ajax-nav.js"></script>  
+	</head>
+	<body>
+		<div id="nope"><div id="centrer"><p>MetroParis ne peut s'afficher correctement sur cet résolution d'écran</p></div></div>
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<header>
+			<div class="fleft">
+				<p>paris<strong>métro</strong></p>
+				<h1>Historique des événements du métro parisien</h1>
+			</div>
+			<div id="about">
+			<a href="#">à propos</a></div>
+			<div id="BackButton" class="hidde">
+				<a href="index">Retours</a>
+			</div>
+		</header>
+				<div id="page404">
+					<div id="bg_color">
+						<video id="video_landing" width="100%" loop autoplay>
+							<source src="./video/fond_404.mp4" type="video/mp4" />
+						</video>
+						<p>Panne sans gravité sur la ligne 404 !</p>
+						<p>Le métro ne passe plus sur le pont, cliquez sur le lien ci-dessous pour nous aider</p>
+						<div id="retour_home"><div class="navi"><a href="index.html"><p>Réparer la ligne</p></a></div></div>
+					</div>
+				</div><!-- Fin de Landing-->
+		<script type="text/javascript" src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="js/g.raphael-min.js"></script>
+		<!--<script type="text/javascript" src="js/g.pie.js"></script>-->
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

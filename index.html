@@ -1,0 +1,291 @@
+<html lang="fr" xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Paris Métro</title>		
+	  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	  <meta name="robots" content="noindex, nofollow">
+	  <link rel="icon" type="image/png" href="favicon.ico" />
+	  <link rel="stylesheet" href="css/reset.css">
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300,600' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/css_event.css">
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	  <script type="text/javascript" src="js/script.js"></script>	
+	  <script type="text/javascript" src="js/nav.js"></script>  
+	</head>
+	<body>
+		<div id="nope"><div id="centrer"><p>MetroParis ne peut s'afficher correctement sur cet résolution d'écran</p></div></div>
+
+		<div id="fb-root"></div>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<header>
+			<div class="fleft">
+				<p>paris<strong>métro</strong></p>
+				<h1>Historique des événements du métro parisien</h1>
+			</div>
+			<div id="BackButton" class="hidde"><div class="navi"><a href="main&drop?0&0">Retour</a></div></div>
+		</header>
+				<div id="drop">
+						<div id="bg_color">
+				<video id="video_landing" width="100%" loop autoplay>
+					<source src="./video/fond_landing.mp4" type="video/mp4" />
+				</video>
+				<p>Bienvenue dans cette découverte du métro parisien</p>
+				<p>Retracez l'historique des grands événements liés au métro de Paris au travers d'une représentation visuelle de données et de nombreux web-documentaires</p>
+				<div id="skipButton"><div class="navi"><a href="main&drop?0&0"><p>entrez</p></a></div></div>
+			</div>
+			<script type="text/javascript">
+			document.getElementById('video_landing').addEventListener('loadedmetadata', function() {
+			  this.currentTime = 4;
+			}, false);
+			</script>
+</div><!-- Fin de Drop-->
+		<div id="main">
+		<!-- <div id="main"> -->
+		<section id="mainMap">
+			<div class="relative clearfix">
+				<div class="fleft">
+					<div class="echelle">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+								<circle cx="5" cy="5" r="4" fill="#E74C3C"/>
+							</svg>
+						</span>
+					</div>
+					<div class="first"><p>1999 - 2030</p></div>
+					<div class="second"><p>1966 - 1998</p></div>
+					<div class="third"><p>1933 - 1965</p></div>
+					<div class="fourth"><p>1900 - 1932</p></div>
+				</div>
+				<div>
+					<div>
+						<div id="canvas_map">
+						</div>
+						<div id="pie1">
+						</div>
+
+						<div id="pie2">
+						</div>
+						<div class="sharers">
+							<fb:like href="https://www.facebook.com/pages/Parismetro/332558150219212" layout="button_count" action="like" show_faces="false" share="false"></fb:like>
+							<div id="custom-tweet-button">
+							  	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://goo.gl/g1pqDj" data-text="#MetroParis, une superbe expérience retraçant l'histoire du métro parisien" data-lang="fr">Tweeter</a>  
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="#About" class="the_about">
+					<div class="navi">
+						<a href="about&main?0&0">à propos</a>
+					</div>
+				</div>
+				<div>
+					<div>
+						<div></div>
+						<div></div>
+						<div><div></div></div>
+						<div></div>
+						<div></div>		
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="linesPart">
+			<div><p>Pour consulter un événement de</p><div></div><p>veuillez cliquer sur un cercle</p></h2></div>
+			<div>
+				<div class="lines">
+					<div class=""><span>1</span></div>
+					<div class=""><span>2</span></div>
+					<div class=""><span>3</span></div>
+					<div class=""><span>3b</span></div>
+					<div class=""><span>4</span></div>
+					<div class=""><span>5</span></div>
+					<div class=""><span>6</span></div>
+					<div class=""><span>7</span></div>
+					<div class=""><span>7b</span></div>
+					<div class=""><span>8</span></div>
+					<div class=""><span>9</span></div>
+					<div class=""><span>10</span></div>
+					<div class=""><span>11</span></div>
+					<div class=""><span>12</span></div>
+					<div class=""><span>13</span></div>
+					<div class=""><span>14</span></div>
+					<div class=""><span>15</span></div>
+					<div class=""><span>16</span></div>
+					<div class=""><span>17</span></div>
+					<div class=""><span>18</span></div>
+				</div>
+				<div class="events">
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- </div> --> <!-- Fin de Main-->
+	</div><!-- Fin de container -->
+	<div id="about">                        <div id="tableau">
+                                <div id="col1">
+                                        <div id="hide">
+                                                <h3>Contexte</h3>
+                                                <p>Le projet PARISMETRO est le fruit d'une collaboration intensive de deux semaines consecutives, et a été réalisé dans le cadre de la formation délivrée à HETIC.<p>
+                                                <h3>Le projet</h3>
+                                                <p>Nous avons du réfléchir à la création d'un service ou un produit digital ayant pour thème "les dates". Nous avons immédiatement déterminé les bases de celui ci :
+                                                <p>
+                                                <strong> - L'histoire du métro parisien</strong><br>
+                                                <strong> - Web-Documentaire augmenté par de la visualisation de données</strong>
+                                                <h3>Remerciements</h3>
+                                                <p>Nous tenons à remercier les personne suivantes<br> pour leur conseils et leur soutiens :<p>
+                                                <ul>
+                                                        <li>La RATP</li>
+                                                        <li>François Pumir</li>
+                                                        <li>Iréne Garcia Turcan</li>
+                                                        <li>Rémy Fayolle</li>
+                                                        <li>Antoine Wattier</li>
+                                                        <li>Aurélien Georget</li>
+                                                        <li>Pierre Guilhou</li>
+                                                        <li>Corentin Flach</li>
+                                                </ul>
+                                        </div>
+
+                                </div>
+                                <div id="col2">
+                                        <div id="cel1">
+                                                <div id="hide2">
+                                                        <h3>Réalisé par :</h3>
+                                                        <ul>
+                                                                <li>Thibaut Haenlin</li>
+                                                                <li>Théo Pipaud</li>
+                                                                <li>Tanguy Géréec</li>
+                                                                <li>Sylvain Mroczko</li>
+                                                                <li>Teddy Dedrie</li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                        <div id="cel2"> 
+                                                <div id="hide3">
+                                                <h3>Merci de votre visite ! </h3>
+                                                </div>
+                                        </div>
+ 
+                                </div>
+                        </div>
+                        <div id="btn_back_1"><div class="navi"><a href="main&about?0&0"><p>Retour</p></a></div></div></div><
+		<script type="text/javascript" src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="js/g.raphael-min.js"></script>
+		<!--<script type="text/javascript" src="js/g.pie.js"></script>-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$('.pluginConnectButton').on("click", function(){
+				$('#u_6_0').hide();
+			});
+		</script>
+</body>
+</html>

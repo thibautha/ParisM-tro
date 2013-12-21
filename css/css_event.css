@@ -1,0 +1,176 @@
+#elementList{
+	height: 100%;
+	overflow: hidden;
+}
+#elementList>.one{top: 0;}
+#elementList>.two{top: -100%;}
+#elementList>.three{top: -200%;}
+#elementList>.four{top: -300%;}
+#elementList>.five{top: -400%;}
+#elementList>div{
+	position:relative;
+}
+#elementList>div>div{
+	height:100%;
+	width:100%;
+	position: relative;
+}
+#elementList>div>div:nth-child(2){
+	background:black;
+}
+#elementList>div>div>div:last-child{
+	width: 100%;
+	position: absolute;
+	background:red;
+	height:300px;
+	bottom: 0;
+	left: -100%;
+}
+
+#media_important{
+	width: 100%;
+	background-color: #E7E7E7;
+	height: 100%;
+}
+#media_important>img{
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -50%;
+	left: 50%;
+	margin-left: -50%;
+}
+#infos{
+	width: 100%;
+	height: 250px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+#description_media{
+	width: 100%;
+	height: 190px;
+	background-color: #3F3F3F;
+}
+
+#titre{
+
+	height: 60px;
+	width: 100%;
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 69%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.7)), color-stop(69%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 69%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 69%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 69%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 69%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+#titre h2{
+	font-family: "Open Sans";
+	font-size: 150%;
+	font-weight: 300;
+	color: white;
+	margin-left: 35px;
+	padding-top: 13px;
+}
+
+#description p{
+	font-family: "Open Sans";
+	font-weight: 300;
+	margin-left: 35px;
+	font-size: 100%;
+	color: white;
+	line-height: 21pt;
+}
+
+#description {
+	width: 60%;
+	padding-top: 25px;
+	float: left;
+}
+
+aside{
+	float: right;
+	width: auto;
+	margin-right: 40px;
+	margin-top: 50px;
+}
+
+aside>p:first-child{
+	text-transform: uppercase;
+	font-family: "Open Sans";
+	color: white;
+	font-size: 80%;
+	font-weight: 300;
+	float: right;
+}
+
+#lignes_evt{
+	margin-left: 12px;
+	height: 100%;
+	display: block;
+	float:right;
+	position: relative;
+}
+#lignes_evt>div{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 35px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -15px;
+}
+
+#lignes_evt div p{
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 5px;
+	font-family: "Open Sans";
+	font-weight: 600;
+	color: white;
+}
+
+#btn_sociaux{
+	margin-top: 15px;
+	float: right !important;
+	margin-right: -30px;
+}
+
+.BackButton{
+	position: fixed;
+	top : 80px;
+	left: 30px;
+	width: auto;
+	height: auto;
+	border: 1px solid white;
+	cursor: pointer;
+	z-index: 99999999;
+}
+
+.BackButton a{
+	color: white;
+	text-transform: uppercase;
+	font-family: "Open Sans";
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
